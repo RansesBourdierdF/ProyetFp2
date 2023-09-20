@@ -1,0 +1,9 @@
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\bin\Debug\netstandard2.1\Hotel.Infrastructrure.deps.json
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\bin\Debug\netstandard2.1\Hotel.Infrastructrure.dll
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\bin\Debug\netstandard2.1\Hotel.Infrastructrure.pdb
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.AssemblyInfoInputs.cache
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.AssemblyInfo.cs
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.csproj.CoreCompileInputs.cache
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.dll
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.pdb
