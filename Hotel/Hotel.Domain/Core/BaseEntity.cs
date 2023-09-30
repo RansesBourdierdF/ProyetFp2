@@ -11,7 +11,7 @@ namespace Hotel.Domain.Core
             ModificacionFecha = modificacionFecha;
         }
 
-        public DateTime CreationDate { get; set; }
+        public DateTime CreacionFecha { get; set; }
         public int Creacionusuario { get; set; }
         public DateTime? ModificacionFecha { get; set; }
         public int? UsuarioMod { get; set; }
