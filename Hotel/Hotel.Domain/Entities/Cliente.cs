@@ -6,6 +6,10 @@ namespace Hotel.Domain.Entities
 {
     public class Cliente : BaseEntity
     {
+        public Cliente(DateTime creacionFecha) : base(creacionFecha)
+        {
+        }
+
         public int Idcliente {  get; set; }
         public string? TipoDocumento { get; set; }
         public string? Documento { get; set; }
