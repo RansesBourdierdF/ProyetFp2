@@ -4,7 +4,7 @@ using System;
 
 namespace Hotel.Domain.Entities
 {
-    public class Usuario : BaseEntity
+    public class Usuario : RolUsuario
     {
        
         public int IdUsuario { get; set; }
@@ -20,8 +20,8 @@ namespace Hotel.Domain.Entities
         
         public string? Clave { get; set; }
 
-        public bool? Estado { get; set; }
+        public new bool? Estado { get; set; }
 
-        public DateTime? FechaCreacion { get; set; }
+        public new DateTime? FechaCreacion { get; set; }
     }
 }

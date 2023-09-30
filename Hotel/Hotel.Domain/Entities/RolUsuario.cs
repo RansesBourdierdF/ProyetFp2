@@ -1,9 +1,10 @@
-﻿using School.Domain.Core;
+﻿using Hotel.Domain.Core;
+using School.Domain.Core;
 using System;
 
 namespace Hotel.Domain.Entities
 {
-    public class RolUsuario :BaseEntity
+    public class RolUsuario : Person
     {
         public int RolUsuarioId { get; set;}
         public string? Descripcion {  get; set;}
