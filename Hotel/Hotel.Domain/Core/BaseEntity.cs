@@ -12,6 +12,12 @@ namespace Hotel.Domain.Core
         }
 
         public DateTime CreacionFecha { get; set; }
+
+        protected BaseEntity(DateTime creacionFecha)
+        {
+            CreacionFecha = creacionFecha;
+        }
+
         public int Creacionusuario { get; set; }
         public DateTime? ModificacionFecha { get; set; }
         public int? UsuarioMod { get; set; }
