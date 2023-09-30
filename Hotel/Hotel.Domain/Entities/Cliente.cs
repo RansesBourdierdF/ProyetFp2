@@ -1,9 +1,8 @@
 ﻿using Hotel.Domain.Core;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Hotel.Domain.Entity
+
+namespace Hotel.Domain.Entities
 {
     public class Cliente : BaseEntity
     {
