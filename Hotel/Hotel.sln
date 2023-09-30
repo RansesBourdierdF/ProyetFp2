@@ -5,15 +5,15 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Domain", "Hotel.Domain\Hotel.Domain.csproj", "{A63858C9-0F84-4913-A6F6-A4BE9B5FDC0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Infrastructrure", "Hotel.Infrastructrure\Hotel.Infrastructrure.csproj", "{67EF0339-1C6B-4366-96DD-E3A5566C0D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Infrastructrure", "Hotel.Infrastructrure\Hotel.Infrastructrure.csproj", "{67EF0339-1C6B-4366-96DD-E3A5566C0D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Application", "Hotel.Application\Hotel.Application.csproj", "{CBA73D8E-8FC8-41F3-8F40-4D01C2624F5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Application", "Hotel.Application\Hotel.Application.csproj", "{CBA73D8E-8FC8-41F3-8F40-4D01C2624F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Web", "Hotel.Web\Hotel.Web.csproj", "{515278AC-A218-477D-A73B-A26CAE0357C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Web", "Hotel.Web\Hotel.Web.csproj", "{515278AC-A218-477D-A73B-A26CAE0357C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Api", "Hotel.Api\Hotel.Api.csproj", "{C84FD9E9-27DC-4698-8DFD-A514BAFA3CEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Api", "Hotel.Api\Hotel.Api.csproj", "{C84FD9E9-27DC-4698-8DFD-A514BAFA3CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Loc", "Hotel.Loc\Hotel.Loc.csproj", "{35567F48-5F39-4985-BF15-998B9F966712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Loc", "Hotel.Loc\Hotel.Loc.csproj", "{35567F48-5F39-4985-BF15-998B9F966712}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{39B5C58E-86CE-4C0E-9CEF-3D5C254CC92B}"
 EndProject
@@ -26,6 +26,40 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{49C638EC-3B68-4BF5-95E6-D61E1A07FB09}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loc", "Loc", "{08EE3518-612C-4029-A989-3923564F5E29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Context", "Context", "{E47C6093-401F-42CD-9D5E-79AFF9E0DD24}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Context\HotelContext.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Context\HotelContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7054C22B-763C-45AF-9BC3-6279F89CFB32}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Core\BaseRepository.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Core\BaseRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{E533D364-9104-4A4E-8589-AE4036EE9E8C}"
+	ProjectSection(SolutionItems) = preProject
+		CategoriaRepository.cs = CategoriaRepository.cs
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Repositories\ClienteRepository.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Repositories\ClienteRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exeption", "Exeption", "{AD578A1A-511F-4FA7-BCBE-EB5CFCC926C0}"
+	ProjectSection(SolutionItems) = preProject
+		CategoriaExeption.cs = CategoriaExeption.cs
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Exeption\ClienteExeption.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Exeption\ClienteExeption.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{E0F491C1-719E-4B6B-BE0A-FDCE42E9F1AB}"
+	ProjectSection(SolutionItems) = preProject
+		CategoriaModel.cs = CategoriaModel.cs
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Model\ClienteModel.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Model\ClienteModel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{098FDEE8-65CB-49EC-968B-04831821848F}"
+	ProjectSection(SolutionItems) = preProject
+		ICategoriaRepository.cs = ICategoriaRepository.cs
+		..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Interfaces\IClienteRepository.cs = ..\..\..\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\Interfaces\IClienteRepository.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +102,12 @@ Global
 		{515278AC-A218-477D-A73B-A26CAE0357C8} = {117FAA11-D794-4504-849A-7140CE4AA0D8}
 		{C84FD9E9-27DC-4698-8DFD-A514BAFA3CEE} = {46E20727-B10F-4ED4-B755-BCE28608C911}
 		{35567F48-5F39-4985-BF15-998B9F966712} = {08EE3518-612C-4029-A989-3923564F5E29}
+		{E47C6093-401F-42CD-9D5E-79AFF9E0DD24} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
+		{7054C22B-763C-45AF-9BC3-6279F89CFB32} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
+		{E533D364-9104-4A4E-8589-AE4036EE9E8C} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
+		{AD578A1A-511F-4FA7-BCBE-EB5CFCC926C0} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
+		{E0F491C1-719E-4B6B-BE0A-FDCE42E9F1AB} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
+		{098FDEE8-65CB-49EC-968B-04831821848F} = {6F1B3CC1-3AF1-4657-A4A3-D1324FB71550}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C241E948-4111-42D6-85E5-ED8C07622285}

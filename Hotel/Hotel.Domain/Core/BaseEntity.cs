@@ -6,6 +6,11 @@ namespace Hotel.Domain.Core
 {
     public abstract class BaseEntity
     {
+        protected BaseEntity(DateTime? modificacionFecha)
+        {
+            ModificacionFecha = modificacionFecha;
+        }
+
         public DateTime CreationDate { get; set; }
         public int Creacionusuario { get; set; }
         public DateTime? ModificacionFecha { get; set; }
