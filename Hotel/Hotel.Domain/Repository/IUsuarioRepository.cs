@@ -8,7 +8,7 @@ namespace Hotel.Domain.Repository
     public interface IUsuarioRepository
     {
 
-        void save(Usuario usuario);
+        void Save(Usuario usuario);
         void Remove(Usuario usuario);
         List<Usuario> GetUsuario();
         Usuario GetUsuario(int id);
