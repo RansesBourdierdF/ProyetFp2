@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{515278AC-A218-477D-A73B-A26CAE0357C8}|Default">
+  <MonoDevelop.Ide.ItemProperties.Web.Hotel.Web PreferredExecutionTarget="/Applications/Opera GX.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotel.Domain/Repository/IBaseRepository.cs">
+    <Files>
+      <File FileName="Hotel.Domain/Core/BaseEntity.cs" Line="17" Column="1" />
+      <File FileName="Hotel.Domain/Core/Person.cs" Line="11" Column="1" />
+      <File FileName="Hotel.Domain/Entity/EstadoHabitacion.cs" Line="15" Column="1" />
+      <File FileName="Hotel.Domain/Repository/IBaseRepository.cs" Line="14" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hotel">
+            <Node name="Domain" expanded="True">
+              <Node name="Hotel.Domain">
+                <Node name="Core" expanded="True" />
+                <Node name="Entity" expanded="True" />
+                <Node name="Repository" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructura" expanded="True">
+              <Node name="Hotel.Infrastructrure" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

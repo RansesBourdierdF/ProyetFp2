@@ -4,14 +4,14 @@
     "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj": {}
   },
   "projects": {
-    "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj": {
+    "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/Hotel.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj",
-        "projectName": "Hotel.Infrastructrure",
-        "projectPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj",
+        "projectUniqueName": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/Hotel.Domain.csproj",
+        "projectName": "Hotel.Domain",
+        "projectPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/Hotel.Domain.csproj",
         "packagesPath": "/Users/jandymercedes/.nuget/packages/",
-        "outputPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/obj/",
+        "outputPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jandymercedes/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,73 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj",
+        "projectName": "Hotel.Infrastructrure",
+        "projectPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/Hotel.Infrastructrure.csproj",
+        "packagesPath": "/Users/jandymercedes/.nuget/packages/",
+        "outputPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Infrastructrure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jandymercedes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/Hotel.Domain.csproj": {
+                "projectPath": "/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Domain/Hotel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
