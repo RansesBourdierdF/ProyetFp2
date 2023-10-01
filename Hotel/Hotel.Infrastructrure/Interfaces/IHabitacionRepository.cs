@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Hotel.Domain.Entities;
+using System.Collections.Generic;
+
 namespace Hotel.Infrastructrure.Interfaces
 {
-	public class IHabitacionRepository
-	{
-		public IHabitacionRepository()
-		{
-		}
-	}
-}
+    public interface IHabitacionRepository
+    {
+        List<Habitacion> GetHabitacion(int HabitacionId);
 
+
+    }
+}
