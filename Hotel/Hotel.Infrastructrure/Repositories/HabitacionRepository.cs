@@ -8,11 +8,7 @@ namespace Hotel.Infrastructrure.Repositories
 {
     public class HabitacionRepository : IHabitacionRepository
     {
-        public HabitacionRepository()
-        {
-        }
-
-        public List<Habitacion> GetHabitacion(int HabitacionId)
+        List<Habitacion> IHabitacionRepository.GetHabitacion(int HabitacionId)
         {
             throw new NotImplementedException();
         }
