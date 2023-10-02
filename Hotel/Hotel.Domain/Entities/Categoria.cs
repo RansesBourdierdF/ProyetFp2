@@ -3,15 +3,8 @@ using System;
 
 namespace Hotel.Domain.Entities
 {
-    public class Categoria : BaseEntity
+    public class Categoria : Cliente
     {
-        public Categoria(DateTime? modificacionFecha) : base(modificacionFecha)
-        {
-        }
-
-        public string? Descripcion {  get; set; }
-       
-
-
+        public string? Descripcion { get; set; }
     }
 }
