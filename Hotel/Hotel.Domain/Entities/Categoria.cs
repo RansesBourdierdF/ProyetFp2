@@ -1,9 +1,8 @@
 ﻿using Hotel.Domain.Core;
-using System;
 
 namespace Hotel.Domain.Entities
 {
-    public class Categoria : Cliente
+    public class Categoria : BaseEntity, IEquatable<Categoria?>
     {
         public string? Descripcion { get; set; }
     }

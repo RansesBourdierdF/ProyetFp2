@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Hotel.Domain.Repository
 {
-    public interface IClienteRepository
+    public interface ICategoriaRepository
     {
 
-        void Save(Cliente Cliente);
-        void Remove(Cliente Cliente);
+        void Save(Cliente cliente);
+        void Remove(Cliente cliente);
         List<Cliente> GetClientes();
         Cliente GetCliente(int id);
 
