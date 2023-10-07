@@ -4,7 +4,7 @@ using Hotel.Domain.Repository;
 
 namespace Hotel.Infrastructrure.Interfaces
 {
-    public interface IUsuariosRepository : IBaseRepository<Usuario>
+    public interface IRolRepository : IBaseRepository<RolUsuario>
     {
 
     }
