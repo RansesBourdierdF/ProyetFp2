@@ -15,7 +15,8 @@ namespace Hotel.Api.Controllers
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
-            _logger = logger;
+            ILogger<WeatherForecastController> logger1 = logger;
+            _logger = logger1;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]

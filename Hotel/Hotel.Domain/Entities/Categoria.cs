@@ -3,18 +3,7 @@ using System;
 
 namespace Hotel.Domain.Entities
 {
-    public class Categoria : BaseEntity, IEquatable<Categoria?>
-    {
-        private readonly bool eliminar;
-
-        public Categoria(DateTime? modificarFecha, string? idCategoria, string? descripcion, string? estado) : base(modificarFecha)
-        {
-            IdCategoria = idCategoria;
-            Descripcion = descripcion;
-            Estado = estado;
-        }
-
-        public Categoria(bool eliminar) : base(eliminar)
+    public class Categoria : BaseEntity
         {
             // Asignar el valor de eliminar a la propiedad local o realizar otras operaciones si es necesario.
             this.eliminar = eliminar;
@@ -51,10 +40,6 @@ namespace Hotel.Domain.Entities
             return base.GetHashCode();
         }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
     }
 }
 
