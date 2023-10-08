@@ -1,10 +1,23 @@
-﻿using System;
+﻿using Hotel.Domain.Entities;
+using Hotel.Infrastructrure.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
+        public bool Exists(Expression<Func<Cliente, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Cliente> FindAll(Expression<Func<Cliente, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public Cliente Get(int id)
         {
             throw new NotImplementedException();
@@ -31,6 +44,8 @@ namespace Hotel.Infrastructrure.Repositories
         }
 
         public void Update(Cliente entity)
-    {
+        {
+            throw new NotImplementedException();
+        }
     }
 }

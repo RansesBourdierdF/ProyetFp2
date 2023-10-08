@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Hotel.Domain.Entities;
+using Hotel.Domain.Repository;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hotel.Infrastructrure.Interfaces
 {
-    internal class IClienteRepository
+    public interface IClienteRepository : IBaseRepository<Cliente>
     {
+        Cliente Get(int id);
     }
 }

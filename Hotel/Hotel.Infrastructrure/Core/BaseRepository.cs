@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Hotel.Domain.Repository;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Hotel.Infrastructrure.Core
@@ -37,6 +39,8 @@ namespace Hotel.Infrastructrure.Core
         }
 
         public void Update(TEntity entity)
-    {
+        {
+            throw new NotImplementedException();
+        }
     }
 }

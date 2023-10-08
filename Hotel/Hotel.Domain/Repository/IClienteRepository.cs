@@ -17,3 +17,5 @@ namespace Hotel.Domain.Repository
 
     }
 }
+
+

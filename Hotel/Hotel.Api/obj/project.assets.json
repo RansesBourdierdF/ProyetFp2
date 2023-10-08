@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Hotel.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Hotel.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hotel.Domain.dll": {}
+        }
       }
     }
   },
@@ -429,10 +439,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Hotel.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Hotel.Domain/Hotel.Domain.csproj",
+      "msbuildProject": "../Hotel.Domain/Hotel.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Hotel.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -469,7 +485,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+              "projectPath": "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
