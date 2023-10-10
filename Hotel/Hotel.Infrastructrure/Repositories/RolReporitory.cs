@@ -1,31 +1,15 @@
 ﻿
 
-using Hotel.Domain.Entities;
+
+
 using Hotel.Domain.Repository;
-using System.Collections.Generic;
+using Hotel.Infrastructrure.Context;
 
 namespace Hotel.Infrastructrure.Repositories
 {
-    public class RolReporitory : IRolRepository
+    public class RolReporitory : IBaseRepository<RolReporitory>, IRolRepository
     {
-        public RolUsuario GetRolUsuario(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<RolUsuario> GetRolUsuarios()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Remove(RolUsuario rolUsuario)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Save(RolUsuario rolUsuario)
-        {
-            throw new System.NotImplementedException();
-        }
+        public RolReporitory(HotelContext hotelContext) { }
+     
     }
 }

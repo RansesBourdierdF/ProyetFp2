@@ -7,6 +7,7 @@ namespace Hotel.Domain.Repository
     {
 
         void Save(Usuario usuario);
+        void Update(Usuario usuario);
         void Remove(Usuario usuario);
         List<Usuario> GetUsuario();
         Usuario GetUsuario(int id);

@@ -1,10 +1,11 @@
-﻿using School.Domain.Core;
+﻿using Hotel.Domain.Core;
+using School.Domain.Core;
 using System;
 
 
 namespace Hotel.Domain.Entities
 {
-    public class Usuario : RolUsuario
+    public class Usuario : Person
     {
        
         public int IdUsuario { get; set; }
@@ -20,8 +21,8 @@ namespace Hotel.Domain.Entities
         
         public string? Clave { get; set; }
 
-        public new bool? Estado { get; set; }
+        public bool? Estado { get; set; }
 
-        public new DateTime? FechaCreacion { get; set; }
+        public DateTime? FechaCreacion { get; set; }
     }
 }
