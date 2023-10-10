@@ -1,4 +1,4 @@
-
+﻿
 namespace Hotel.Domain.Core
 {
     public abstract class Person : BaseEntity
