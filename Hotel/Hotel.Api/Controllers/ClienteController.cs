@@ -1,4 +1,5 @@
-﻿
+﻿using Hotel.Domain.Entities;
+using Hotel.Infrastructrure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel.Api.Controllers
