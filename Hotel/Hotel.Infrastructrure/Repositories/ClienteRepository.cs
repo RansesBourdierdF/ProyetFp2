@@ -10,42 +10,84 @@ namespace Hotel.Infrastructrure.Repositories
     {
         public bool Exists(Expression<Func<Cliente, bool>> filter)
         {
-            throw new NotImplementedException();
+            
+            bool exists = true; // Supongamos que el cliente existe
+            if (!exists)
+            {
+                throw new ClienteNotFoundException("El cliente no se encontró en la base de datos.");
+            }
+            return exists;
         }
 
         public List<Cliente> FindAll(Expression<Func<Cliente, bool>> filter)
         {
-            throw new NotImplementedException();
+          
+            List<Cliente> clientes = new List<Cliente>(); // Supongamos que obtienes los clientes correctamente.
+            return clientes;
         }
 
         public Cliente Get(int id)
         {
-            throw new NotImplementedException();
+            Cliente? cliente = null; // Supongamos que obtienes el cliente correctamente.
+            if (cliente == null)
+            {
+                throw new ClienteNotFoundException("El cliente con el ID especificado no se encontró.");
+            }
+
+            return cliente;
         }
 
         public List<Cliente> GetEntities()
         {
-            throw new NotImplementedException();
+            
+            List<Cliente> clientes = new List<Cliente>(); // Supongamos que obtienes los clientes correctamente.
+            return clientes;
         }
 
         public Cliente GetEntity(int Id)
         {
-            throw new NotImplementedException();
+            
+            Cliente? cliente = null; // Supongamos que obtienes la entidad Cliente correctamente.
+            if (cliente == null)
+            {
+                throw new ClienteNotFoundException("La entidad Cliente con el ID especificado no se encontró.");
+            }
+            return cliente;
         }
 
         public void Remove(Cliente entity)
         {
-            throw new NotImplementedException();
+            // Implementa la lógica para eliminar un cliente de la base de datos.
         }
 
         public void Save(Cliente entity)
         {
-            throw new NotImplementedException();
+            // Implementa la lógica para guardar un nuevo cliente en la base de datos.
         }
 
         public void Update(Cliente entity)
         {
-            throw new NotImplementedException();
+            // Implementa la lógica para actualizar un cliente en la base de datos.
+        }
+
+        [Serializable]
+        private class ClienteNotFoundException : Exception
+        {
+            public ClienteNotFoundException()
+            {
+            }
+
+            public ClienteNotFoundException(string message) : base(message)
+            {
+            }
+
+            public ClienteNotFoundException(string message, Exception innerException) : base(message, innerException)
+            {
+            }
+
+            protected ClienteNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
+            {
+            }
         }
     }
 }
