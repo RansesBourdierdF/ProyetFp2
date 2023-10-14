@@ -8,5 +8,6 @@ namespace Hotel.Infrastructrure.Interfaces
 {
     public interface ICategoriaRepository : IBaseRepository<Categoria>
     {
+        public string? CategoriaId { get; set; }
     }
 }

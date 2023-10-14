@@ -6,6 +6,7 @@ namespace Hotel.Api.Models.Core
     {
         public ClienteBaseModel(int cambiarUsuario) : base(cambiarUsuario)
         {
+
         }
     }
 }

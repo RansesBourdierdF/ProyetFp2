@@ -4,7 +4,10 @@ namespace Hotel.Domain.Entities
 {
     public class Cliente : BaseEntity
     {
-       
+        public Cliente(int creacionDeUsuario) : base(creacionDeUsuario)
+        {
+        }
+
         public string? TipoDocumento { get; set; }
         public string? Documento { get; set; }
         public string? NombreCompleto { get; set; }

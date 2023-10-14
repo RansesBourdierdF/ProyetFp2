@@ -7,9 +7,18 @@ namespace Hotel.Domain.Entities
     {
         public string? IdCategoria { get; set; }
         public string? Descripcion { get; set; }
-        public string? Estado { get; set; }
 
-        
+        private string? estado;
+
+        public string? GetEstado()
+        {
+            return estado;
+        }
+
+        public void SetEstado(string? value)
+        {
+            estado = value;
+        }
     }
 }
 

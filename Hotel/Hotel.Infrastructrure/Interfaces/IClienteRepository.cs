@@ -9,5 +9,7 @@ namespace Hotel.Infrastructrure.Interfaces
     public interface IClienteRepository : IBaseRepository<Cliente>
     {
         Cliente Get(int id);
+        public string Description { get; set; }
+        public bool IsSpecial { get; set; }
     }
 }

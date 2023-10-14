@@ -3,11 +3,16 @@ using Hotel.Infrastructrure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Runtime.Serialization;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
+        
+        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool IsSpecial { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public bool Exists(Expression<Func<Cliente, bool>> filter)
         {
             
@@ -18,7 +23,6 @@ namespace Hotel.Infrastructrure.Repositories
             }
             return exists;
         }
-
         public List<Cliente> FindAll(Expression<Func<Cliente, bool>> filter)
         {
           
