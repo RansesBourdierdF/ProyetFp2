@@ -9,11 +9,8 @@ namespace Hotel.Domain.Repository
         void Update(RolUsuario rolUsuario);
         void Remove(RolUsuario rolUsuario);
         List<RolUsuario> GetRolUsuarios();
-        RolUsuario GetRolUsuario(int id);
-
-
-
-
-
+        RolUsuario GetRolUsuario(int rolUsuario);
+        object GetRolUsuarioById(int rolUsuarioId);
+        object GetEntities();
     }
 }

@@ -14,6 +14,12 @@ namespace Hotel.Infrastructrure.Core
         private readonly HotelContext context;
         private readonly DbSet<TEntity> entities;
 
+        public  BaseRepository(HotelContext context)
+        {
+            this.context = context;
+            this.entities = context.Set<TEntity>();
+        }
+
         public BaseRepository(HotelContext context, DbSet<TEntity> entities)
         {
             this.context = context;
@@ -42,7 +48,7 @@ namespace Hotel.Infrastructrure.Core
 
         public virtual void Remove(TEntity entity)
         {
-             this.entities.Remove(entity);
+            this.entities.Remove(entity);
         }
 
         public virtual void Save(TEntity entity)
@@ -53,6 +59,12 @@ namespace Hotel.Infrastructrure.Core
         public virtual void Update(TEntity entity)
         {
             this.entities.Update(entity);
+
         }
+
     }
+
 }
+
+
+

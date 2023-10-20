@@ -7,3 +7,4 @@ C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.csproj.CoreCompileInputs.cache
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.dll
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.pdb
+C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Infrastructrure\obj\Debug\netstandard2.1\Hotel.Infrastructrure.csproj.AssemblyReference.cache
