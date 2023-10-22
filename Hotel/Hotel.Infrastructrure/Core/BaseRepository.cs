@@ -36,9 +36,14 @@ namespace Hotel.Infrastructrure.Core
             return this.entities.Where(filter).ToList();
         }
 
-        public virtual List<TEntity> GetEntities()
+        public virtual List<TEntity> GetEntities(int id)
         {
             return this.entities.ToList();
+        }
+
+        public List<TEntity> GetEntities()
+        {
+            throw new NotImplementedException();
         }
 
         public virtual TEntity GetEntity(int Id)

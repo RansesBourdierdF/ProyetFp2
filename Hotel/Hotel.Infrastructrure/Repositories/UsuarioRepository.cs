@@ -4,6 +4,7 @@ using Hotel.Domain.Entities;
 using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Context;
 using Hotel.Infrastructrure.Core;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -41,6 +42,16 @@ namespace Hotel.Infrastructrure.Repositories
         public Usuario GetUsuario(int id)
         {
             throw new System.NotImplementedException();
+        }
+
+        public object GetUsuarioById(int usuarioId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Usuario> GetEntities()
+        {
+            throw new NotImplementedException();
         }
     }
 }

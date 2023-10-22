@@ -7,6 +7,7 @@ using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Context;
 using Hotel.Infrastructrure.Core;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -28,18 +29,28 @@ namespace Hotel.Infrastructrure.Repositories
 
         public object GetRolUsuarioById(int rolUsuarioId)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public List<RolUsuario> GetRolUsuarioByrolUsuarioId(int rolUsuario)
         {
-            return this.context.RolUsuarios.Where(cd => cd.RolUsuarioId == rolUsuario).ToList();
-
+            return this.context.RolUsuarios.Where(cd => cd.RolUsuarioId == rolUsuario
+                           ).ToList();
         }
 
         public List<RolUsuario> GetRolUsuarios()
         {
             return this.GetEntities().Where(go => !go.Deleted).ToList();
+        }
+
+        private IEnumerable<RolUsuario> GetEntities()
+        {
+            throw new NotImplementedException();
+        }
+
+        object IRolRepository.GetEntities()
+        {
+            throw new NotImplementedException();
         }
     }
 }

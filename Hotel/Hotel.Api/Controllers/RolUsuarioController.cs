@@ -77,21 +77,23 @@ namespace Hotel.Api.Controllers
         }
 
         // POST api/<RolUsuarioController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("UpdateRolUsuario")]
+        public IActionResult Put([FromBody] RolUsuarioUpdateModel rolUsuarioUpdate)
         {
+            RolUsuario rolUsuario = new RolUsuario()
+            {
+                RolUsuarioId = rolUsuarioUpdate.RolUsuarioId,
+                CreationDate = rolUsuarioUpdate.MarkData,
+                CreationUser = rolUsuarioUpdate.User00,
+                Descripcion = rolUsuarioUpdate.Descripcion,
+                Estado = rolUsuarioUpdate.Estado,
+                Deleted = rolUsuarioUpdate.Delited
+                
+            };
+            this.rolRepository.Update(rolUsuario);
+            return Ok();
         }
 
-        // PUT api/<RolUsuarioController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<RolUsuarioController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }
