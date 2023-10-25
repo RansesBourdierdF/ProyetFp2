@@ -7,3 +7,13 @@ C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.A
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.csproj.CoreCompileInputs.cache
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.dll
 C:\Proyectfinalp2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.pdb
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\bin\Debug\netstandard2.1\Hotel.Loc.deps.json
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\bin\Debug\netstandard2.1\Hotel.Loc.dll
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\bin\Debug\netstandard2.1\Hotel.Loc.pdb
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.csproj.AssemblyReference.cache
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.AssemblyInfoInputs.cache
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.AssemblyInfo.cs
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.csproj.CoreCompileInputs.cache
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.dll
+C:\proyectoPro2\ProyetFp2\Hotel\Hotel.Loc\obj\Debug\netstandard2.1\Hotel.Loc.pdb

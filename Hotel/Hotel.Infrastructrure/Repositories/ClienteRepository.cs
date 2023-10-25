@@ -2,11 +2,13 @@
 using Hotel.Infrastructrure.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
 namespace Hotel.Infrastructrure.Repositories
 {
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class ClienteRepository : IClienteRepository
     {
         
@@ -39,6 +41,11 @@ namespace Hotel.Infrastructrure.Repositories
             }
 
             return cliente;
+        }
+
+        public object GetClienteById(int clienteId)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Cliente> GetEntities()
@@ -92,6 +99,11 @@ namespace Hotel.Infrastructrure.Repositories
             protected ClienteNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
             {
             }
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
         }
     }
 }

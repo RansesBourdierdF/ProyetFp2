@@ -1,4 +1,9 @@
-﻿namespace Hotel.Api.Controllers
+﻿using Hotel.Api.Models.Module.Cliente;  // Importa los espacios de nombres de Cliente
+using Hotel.Domain.Entities;
+using Hotel.Infrastructrure.Repositories;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Hotel.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -32,7 +37,7 @@
         {
             var clientes = clienteRepository.GetEntities().Select(dc => new ClienteGetAllModel()
             {
-                Descripcion = dc.Descripcion,
+                
                 // Otros campos relacionados con la entidad Cliente
             }).ToList();
             return Ok(clientes);
@@ -41,7 +46,7 @@
         [HttpPost("SaveCliente")]
         public IActionResult Post([FromBody] ClienteAddModel clienteAdd)
         {
-            Cliente cliente = new Cliente()
+            Cliente cliente = new Cliente(1)
             {
                 CreacionDeUsuario = clienteAdd.CreacionDeUsuario, // Asegúrate de asignar un valor válido
                 NombreCompleto = clienteAdd.NombreCompleto,
@@ -56,7 +61,14 @@
         [HttpPost("UpdateCliente")]
         public IActionResult Post([FromBody] ClienteUpdateModel clienteUpdate)
         {
-            Cliente cliente = new Cliente()
-    {
+            Cliente cliente = new Cliente(1)
+            {
+                CreacionDeUsuario = clienteUpdate.CreacionDeUsuario, // Asegúrate de asignar un valor válido
+                                                                     // Otros campos de actualización
+            };
+
+            return Ok();
+        }
     }
 }
+

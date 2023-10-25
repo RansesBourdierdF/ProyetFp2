@@ -10,37 +10,40 @@ namespace Hotel.Infrastructure.Repositories
     [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class CategoriaRepository : ICategoriaRepository
     {
+        public object GetCategoriaById(int categoriaId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Cliente GetCliente(int id)
         {
-            // Implementa la lógica para obtener un cliente por su ID.
-            // Puedes devolver el cliente encontrado o lanzar una excepción si no se encuentra.
-            // Por ejemplo:
-            Cliente? cliente = null; // Supongamos que obtienes el cliente correctamente.
-            if (cliente == null)
-            {
-                throw new ClienteNotFoundException("El cliente con el ID especificado no se encontró.");
-            }
-            return cliente;
+            throw new NotImplementedException();
         }
 
         public List<Cliente> GetClientes()
         {
-            // Implementa la lógica para obtener todos los clientes.
-            // Puedes devolver una lista de clientes o una excepción si no hay clientes disponibles.
-            // Por ejemplo:
-            List<Cliente> clientes = new List<Cliente>(); // Supongamos que obtienes los clientes correctamente.
-            return clientes;
+            throw new NotImplementedException();
+        }
+
+        // ... otros métodos
+
+        public List<Categoria> GetEntities()
+        {
+            List<Categoria> categorias = new List<Categoria>(); // Supongamos que obtienes las categorías correctamente.
+            return categorias;
         }
 
         public void Remove(Cliente cliente)
         {
-            // Implementa la lógica para eliminar un cliente de la base de datos.
+            throw new NotImplementedException();
         }
 
         public void Save(Cliente cliente)
         {
-            // Implementa la lógica para guardar un nuevo cliente en la base de datos.
+            throw new NotImplementedException();
         }
+
+        // ... otros métodos
 
         private string GetDebuggerDisplay()
         {
@@ -48,21 +51,21 @@ namespace Hotel.Infrastructure.Repositories
         }
 
         [Serializable]
-        private class ClienteNotFoundException : Exception
+        private class CategoriaNotFoundException : Exception
         {
-            public ClienteNotFoundException()
+            public CategoriaNotFoundException()
             {
             }
 
-            public ClienteNotFoundException(string message) : base(message)
+            public CategoriaNotFoundException(string message) : base(message)
             {
             }
 
-            public ClienteNotFoundException(string message, Exception innerException) : base(message, innerException)
+            public CategoriaNotFoundException(string message, Exception innerException) : base(message, innerException)
             {
             }
 
-            protected ClienteNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
+            protected CategoriaNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
             {
             }
         }

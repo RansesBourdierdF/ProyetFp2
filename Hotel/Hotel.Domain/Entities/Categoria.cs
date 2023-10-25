@@ -1,14 +1,18 @@
-using Hotel.Domain.Core;
-using System;
 
 namespace Hotel.Domain.Entities
 {
     public class Categoria : Cliente
     {
         public string? IdCategoria { get; set; }
-        public string? Descripcion { get; set; }
+        public new string? Descripcion { get; set; }
 
         private string? estado;
+
+        public Categoria(int creacionDeUsuario) : base(creacionDeUsuario)
+        {
+        }
+
+        
 
         public string? GetEstado()
         {

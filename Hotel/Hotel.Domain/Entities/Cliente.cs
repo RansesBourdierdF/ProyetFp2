@@ -4,8 +4,12 @@ namespace Hotel.Domain.Entities
 {
     public class Cliente : BaseEntity
     {
+        public readonly object Descripcion;
+
+
         public Cliente(int creacionDeUsuario) : base(creacionDeUsuario)
         {
+
         }
 
         public string? TipoDocumento { get; set; }
