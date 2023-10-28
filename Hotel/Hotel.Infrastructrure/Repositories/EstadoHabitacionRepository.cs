@@ -3,37 +3,33 @@ using System.Collections.Generic;
 using Hotel.Domain.Entities;
 using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Interfaces;
+using IEstadoHabitacionRepository = Hotel.Domain.Repository.IEstadoHabitacionRepository;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class EstadoHabitacionRepository : IEstadoHabitacionRepository
     {
-        List<EstadoHabitacion> IBaseRepository<EstadoHabitacion>.GetEntities()
+        List<EstadoHabitacion> IEstadoHabitacionRepository.GetEstadoHabitacion()
         {
             throw new NotImplementedException();
         }
 
-        EstadoHabitacion IBaseRepository<EstadoHabitacion>.GetEntity(int Id)
+        EstadoHabitacion IEstadoHabitacionRepository.GetEstadoHabitacion(int id)
         {
             throw new NotImplementedException();
         }
 
-        List<EstadoHabitacion> IEstadoHabitacionRepository.GetEstadoHabitacion(int HabitacionId)
+        void IEstadoHabitacionRepository.Remove(EstadoHabitacion estadoHabitacion)
         {
             throw new NotImplementedException();
         }
 
-        void IBaseRepository<EstadoHabitacion>.Remove(EstadoHabitacion entity)
+        void IEstadoHabitacionRepository.Save(EstadoHabitacion estadoHabitacion)
         {
             throw new NotImplementedException();
         }
 
-        void IBaseRepository<EstadoHabitacion>.Save(EstadoHabitacion entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        void IBaseRepository<EstadoHabitacion>.Update(EstadoHabitacion entity)
+        void IEstadoHabitacionRepository.Update(EstadoHabitacion estadoHabitacion)
         {
             throw new NotImplementedException();
         }

@@ -8,7 +8,8 @@ namespace Hotel.Domain.Repository
         void Save(TEntity entity);
         void Update(TEntity entity);
         void Remove(TEntity entity);
-        List<TEntity> GetEntities();
+        List<TEntity> Entities { get; }
+
         TEntity GetEntity(int Id);
     }
 }
