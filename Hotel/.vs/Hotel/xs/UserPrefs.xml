@@ -4,17 +4,24 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Hotel.Infrastructrure/Repositories/HabitacionRepository.cs">
     <Files>
-      <File FileName="Hotel.Infrastructrure/Repositories/HabitacionRepository.cs" Line="12" Column="62" />
+      <File FileName="Hotel.Infrastructrure/Repositories/HabitacionRepository.cs" Line="9" Column="1" />
+      <File FileName="Hotel.Infrastructrure/Repositories/EstadoHabitacionRepository.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Infrastructrure/Context/HotelContext.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Infrastructrure/Core/BaseRepository.cs" Line="13" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Hotel">
             <Node name="Domain" expanded="True" />
-            <Node name="Infrastructura" expanded="True" selected="True">
-              <Node name="Hotel.Infrastructrure" expanded="True">
+            <Node name="Infrastructura">
+              <Node name="Hotel.Infrastructrure">
                 <Node name="Context" expanded="True" />
-                <Node name="Repositories" expanded="True" />
+                <Node name="Core" expanded="True" />
+                <Node name="Models" expanded="True" />
+                <Node name="Repositories" expanded="True">
+                  <Node name="HabitacionRepository.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

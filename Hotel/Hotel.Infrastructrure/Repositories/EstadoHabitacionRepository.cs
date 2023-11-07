@@ -1,37 +1,41 @@
-﻿using System;
+﻿
+
 using System.Collections.Generic;
 using Hotel.Domain.Entities;
-using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Interfaces;
-using IEstadoHabitacionRepository = Hotel.Domain.Repository.IEstadoHabitacionRepository;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class EstadoHabitacionRepository : IEstadoHabitacionRepository
     {
-        List<EstadoHabitacion> IEstadoHabitacionRepository.GetEstadoHabitacion()
+        public List<EstadoHabitacion> GetEntities()
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
-        EstadoHabitacion IEstadoHabitacionRepository.GetEstadoHabitacion(int id)
+        public EstadoHabitacion GetEntity(int Id)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
-        void IEstadoHabitacionRepository.Remove(EstadoHabitacion estadoHabitacion)
+        public List<EstadoHabitacion> GetEstadoHabitacionId(int estadoHabitacionId)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
-        void IEstadoHabitacionRepository.Save(EstadoHabitacion estadoHabitacion)
+        public void Remove(EstadoHabitacion entity)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
-        void IEstadoHabitacionRepository.Update(EstadoHabitacion estadoHabitacion)
+        public void Save(EstadoHabitacion entity)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(EstadoHabitacion entity)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

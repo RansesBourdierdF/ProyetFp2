@@ -7,6 +7,6 @@ namespace Hotel.Infrastructrure.Interfaces
 {
     public interface IEstadoHabitacionRepository : IBaseRepository<EstadoHabitacion>
     {
-        List<EstadoHabitacion> GetEstadoHabitacion(int HabitacionId);
+        List<EstadoHabitacion> GetEstadoHabitacionId(int estadoHabitacionId);
     }
 }
