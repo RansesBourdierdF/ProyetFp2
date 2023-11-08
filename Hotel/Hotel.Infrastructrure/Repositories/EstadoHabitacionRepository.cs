@@ -1,21 +1,35 @@
-﻿
-
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using Hotel.Domain.Entities;
+using Hotel.Infrastructrure.Context;
 using Hotel.Infrastructrure.Interfaces;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class EstadoHabitacionRepository : IEstadoHabitacionRepository
     {
+        private readonly HotelContext context;
+
+        public EstadoHabitacionRepository(HotelContext context)
+        {
+            this.context = context;
+        }
+
+        public bool Exists(Expression<Func<EstadoHabitacion, bool>> filter)
+        {
+            return this.context.EstadoHabitacions.Any(filter);
+        }
+
         public List<EstadoHabitacion> GetEntities()
         {
-            throw new System.NotImplementedException();
+            return this.context.EstadoHabitacions.Where(st => !st.Deleted).ToList();
         }
 
         public EstadoHabitacion GetEntity(int Id)
         {
-            throw new System.NotImplementedException();
+            return this.context.EstadoHabitacions.Find(Id);
         }
 
         public List<EstadoHabitacion> GetEstadoHabitacionId(int estadoHabitacionId)
@@ -25,17 +39,17 @@ namespace Hotel.Infrastructrure.Repositories
 
         public void Remove(EstadoHabitacion entity)
         {
-            throw new System.NotImplementedException();
+            this.context.EstadoHabitacions.Remove(entity);
         }
 
         public void Save(EstadoHabitacion entity)
         {
-            throw new System.NotImplementedException();
+            this.context.EstadoHabitacions.Add(entity);
         }
 
         public void Update(EstadoHabitacion entity)
         {
-            throw new System.NotImplementedException();
+            this.context.EstadoHabitacions.Update(entity);
         }
     }
 }

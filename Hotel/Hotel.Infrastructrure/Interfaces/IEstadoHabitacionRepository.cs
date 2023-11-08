@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Hotel.Domain.Entities;
 using Hotel.Domain.Repository;
 

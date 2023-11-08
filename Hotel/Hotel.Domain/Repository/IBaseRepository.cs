@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Hotel.Domain.Repository
 {
@@ -8,12 +10,10 @@ namespace Hotel.Domain.Repository
         void Save(TEntity entity);
 
         void Update(TEntity entity);
-
         void Remove(TEntity entity);
-
         List<TEntity> GetEntities();
-
         TEntity GetEntity(int Id);
-
+        bool Exists(Expression<Func<TEntity, bool>> filter);
+        
     }
 }

@@ -11,7 +11,7 @@ namespace Hotel.Infrastructrure.Context
 
         }
 
-        public DbSet<EstadoHabitacion>? EstadoHabitacions { get; set; }
-        public DbSet<Habitacion>? Habitacions{ get; set; }
+        public DbSet<EstadoHabitacion> EstadoHabitacions{ get; set; }
+        public DbSet<Habitacion> Habitacions{ get; set; }
     }
 }

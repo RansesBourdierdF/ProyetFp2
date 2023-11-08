@@ -1,25 +1,35 @@
 ﻿using Hotel.Domain.Entities;
-using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Context;
-using Hotel.Infrastructrure.Core;
 using Hotel.Infrastructrure.Interfaces;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Hotel.Infrastructrure.Repositories
 {
     public class HabitacionRepository : IHabitacionRepository
     {
+        private readonly HotelContext context;
+
+        public HabitacionRepository(HotelContext context)
+        {
+            this.context = context;
+        }
+
+        public bool Exists(Expression<Func<Habitacion, bool>> filter)
+        {
+            return this.context.Habitacions.Any(filter);
+        }
+
         public List<Habitacion> GetEntities()
         {
-            throw new NotImplementedException();
+            return this.context.Habitacions.Where(st => !st.Deleted).ToList();
         }
 
         public Habitacion GetEntity(int Id)
         {
-            throw new NotImplementedException();
+            return this.context.Habitacions.Find(Id);
         }
 
         public List<Habitacion> GetHabitacionId(int HabitacionId)
@@ -29,17 +39,18 @@ namespace Hotel.Infrastructrure.Repositories
 
         public void Remove(Habitacion entity)
         {
-            throw new NotImplementedException();
+          this.context.Habitacions.Remove(entity);
+
         }
 
         public void Save(Habitacion entity)
         {
-            throw new NotImplementedException();
+            this.context.Habitacions.Add(entity);
         }
 
         public void Update(Habitacion entity)
         {
-            throw new NotImplementedException();
+            this.context.Habitacions.Update(entity);
         }
     }
 }
