@@ -5,4 +5,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Core\" />
+    <None Remove="Contract\" />
+    <None Remove="Dtos\" />
+    <None Remove="Service\" />
+    <None Remove="Dtos\EstadoHabitacion\" />
+    <None Remove="Dtos\Habitacion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Contract\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Service\" />
+    <Folder Include="Dtos\EstadoHabitacion\" />
+    <Folder Include="Dtos\Habitacion\" />
+  </ItemGroup>
 </Project>

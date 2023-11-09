@@ -1,8 +1,9 @@
 using Hotel.Domain.Repository;
 using Hotel.Infrastructrure.Context;
+using Hotel.Infrastructrure.Interfaces;
 using Hotel.Infrastructrure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.

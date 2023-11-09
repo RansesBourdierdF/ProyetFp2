@@ -7,5 +7,6 @@ namespace Hotel.Infrastructrure.Interfaces
     public interface IHabitacionRepository : IBaseRepository<Habitacion>
     {
         List<Habitacion> GetHabitacionId(int HabitacionId);
+        IEnumerable<Habitacion> GetHabitacions();
     }
 }

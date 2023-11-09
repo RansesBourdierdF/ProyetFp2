@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Hotel.Domain.Entities;
+using Hotel.Infrastructrure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,11 +9,18 @@ namespace Hotel.Api.Controllers
     [Route("api/[controller]")]
     public class HabitacionController : ControllerBase
     {
+        private readonly IHabitacionRepository habitacionRepository;
+
+        public HabitacionController(IHabitacionRepository habitacionRepository)
+        {
+            this.habitacionRepository = habitacionRepository;
+        }
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Habitacion> Get()
         {
-            return new string[] { "value1", "value2" };
+           var habitacions = this.habitacionRepository.GetHabitacions();
+            return habitacions;
         }
 
         // GET api/values/5

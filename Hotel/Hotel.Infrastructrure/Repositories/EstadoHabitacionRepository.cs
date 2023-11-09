@@ -4,15 +4,16 @@ using System.Linq;
 using System.Linq.Expressions;
 using Hotel.Domain.Entities;
 using Hotel.Infrastructrure.Context;
+using Hotel.Infrastructrure.Core;
 using Hotel.Infrastructrure.Interfaces;
 
 namespace Hotel.Infrastructrure.Repositories
 {
-    public class EstadoHabitacionRepository : IEstadoHabitacionRepository
+    public class EstadoHabitacionRepository : BaseRepository<EstadoHabitacion>, IEstadoHabitacionRepository
     {
         private readonly HotelContext context;
 
-        public EstadoHabitacionRepository(HotelContext context)
+        public EstadoHabitacionRepository(HotelContext context) : base(context)
         {
             this.context = context;
         }
@@ -50,6 +51,11 @@ namespace Hotel.Infrastructrure.Repositories
         public void Update(EstadoHabitacion entity)
         {
             this.context.EstadoHabitacions.Update(entity);
+        }
+
+        IEnumerable<EstadoHabitacion> IEstadoHabitacionRepository.GetEstadoHabitacions()
+        {
+            throw new NotImplementedException();
         }
     }
 }

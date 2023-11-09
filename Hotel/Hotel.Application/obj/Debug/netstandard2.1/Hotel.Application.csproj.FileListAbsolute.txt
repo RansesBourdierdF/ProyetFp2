@@ -7,13 +7,8 @@ C:/Proyectfinalp2/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hot
 C:/Proyectfinalp2/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.csproj.CoreCompileInputs.cache
 C:/Proyectfinalp2/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.dll
 C:/Proyectfinalp2/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.pdb
-/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/bin/Debug/netstandard2.1/Hotel.Application.deps.json
-/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/bin/Debug/netstandard2.1/Hotel.Application.dll
-/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/bin/Debug/netstandard2.1/Hotel.Application.pdb
 /Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.csproj.AssemblyReference.cache
 /Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.GeneratedMSBuildEditorConfig.editorconfig
 /Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.AssemblyInfoInputs.cache
 /Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.AssemblyInfo.cs
 /Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.csproj.CoreCompileInputs.cache
-/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.dll
-/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Application/obj/Debug/netstandard2.1/Hotel.Application.pdb

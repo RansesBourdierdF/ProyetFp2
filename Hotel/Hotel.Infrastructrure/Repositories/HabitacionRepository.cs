@@ -1,5 +1,6 @@
 ﻿using Hotel.Domain.Entities;
 using Hotel.Infrastructrure.Context;
+using Hotel.Infrastructrure.Core;
 using Hotel.Infrastructrure.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,11 @@ using System.Linq.Expressions;
 
 namespace Hotel.Infrastructrure.Repositories
 {
-    public class HabitacionRepository : IHabitacionRepository
+    public class HabitacionRepository : BaseRepository<Habitacion>, IHabitacionRepository
     {
         private readonly HotelContext context;
 
-        public HabitacionRepository(HotelContext context)
+        public HabitacionRepository(HotelContext context) : base(context)
         {
             this.context = context;
         }
@@ -33,6 +34,11 @@ namespace Hotel.Infrastructrure.Repositories
         }
 
         public List<Habitacion> GetHabitacionId(int HabitacionId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Habitacion> GetHabitacions()
         {
             throw new NotImplementedException();
         }
