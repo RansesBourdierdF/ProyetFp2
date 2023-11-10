@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Hotel.Application.Dtos.EstadoHabitacion
+namespace Hotel.Application.Dtos.Habitacion
 {
     public class HabitacionDtoGet
     {

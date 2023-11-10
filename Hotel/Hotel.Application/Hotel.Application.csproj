@@ -21,4 +21,7 @@
     <Folder Include="Dtos\EstadoHabitacion\" />
     <Folder Include="Dtos\Habitacion\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Infrastructrure\Hotel.Infrastructrure.csproj" />
+  </ItemGroup>
 </Project>

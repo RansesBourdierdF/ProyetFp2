@@ -1,7 +1,7 @@
 ﻿using System;
 using School.Application.Dtos.Base;
 
-namespace Hotel.Application.Dtos.EstadoHabitacion
+namespace Hotel.Application.Dtos.Habitacion
 {
     public class HabitacionDtoBase : DtoBase
     {

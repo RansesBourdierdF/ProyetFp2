@@ -8,5 +8,6 @@ namespace Hotel.Infrastructrure.Interfaces
     {
         List<EstadoHabitacion> GetEstadoHabitacionId(int estadoHabitacionId);
         IEnumerable<EstadoHabitacion> GetEstadoHabitacions();
+        dynamic GetEstadoHabitacions(int id);
     }
 }

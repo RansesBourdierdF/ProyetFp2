@@ -38,6 +38,11 @@ namespace Hotel.Infrastructrure.Repositories
             throw new System.NotImplementedException();
         }
 
+        public dynamic GetEstadoHabitacions(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Remove(EstadoHabitacion entity)
         {
             this.context.EstadoHabitacions.Remove(entity);

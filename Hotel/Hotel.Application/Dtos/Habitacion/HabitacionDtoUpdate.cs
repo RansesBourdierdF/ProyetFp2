@@ -1,11 +1,11 @@
 ﻿using System;
-namespace Hotel.Application.Dtos.EstadoHabitacion
+namespace Hotel.Application.Dtos.Habitacion
 {
     public class HabitacionDtoUpdate : HabitacionDtoBase
     {
 
 
-        public int HabitacionId { get; set; }
+        public int IdHabitacion { get; set; }
 
 
     }

@@ -1,19 +1,49 @@
-﻿<Properties StartupConfiguration="{515278AC-A218-477D-A73B-A26CAE0357C8}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hotel.Api/Program.cs">
+﻿<Properties StartupConfiguration="{C84FD9E9-27DC-4698-8DFD-A514BAFA3CEE}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Web.Hotel.Web PreferredExecutionTarget="/Applications/Opera GX.app" />
+  <MonoDevelop.Ide.ItemProperties.Api.Hotel.Api PreferredExecutionTarget="/Applications/Opera GX.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hotel.Application/Dtos/DtoBase.cs">
     <Files>
-      <File FileName="Hotel.Api/Program.cs" Line="18" Column="36" />
-      <File FileName="Hotel.Api/appsettings.Development.json" />
-      <File FileName="Hotel.Api/Controllers/HabitacionController.cs" />
-      <File FileName="Hotel.Infrastructrure/Repositories/EstadoHabitacionRepository.cs" />
-      <File FileName="Hotel.Infrastructrure/Repositories/HabitacionRepository.cs" />
+      <File FileName="Hotel.Application/Core/BaseService.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Core/IBaseService.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Core/ServiceResult.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Contract/IEstadoHabitacionService.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Dtos/DtoBase.cs" Line="14" Column="1" />
+      <File FileName="Hotel.Application/Dtos/EstadoHabitacion/EstadoHabitacionDtoAdd.cs" Line="13" Column="1" />
+      <File FileName="Hotel.Application/Dtos/EstadoHabitacion/EstadoHabitacionDtoBase.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Dtos/EstadoHabitacion/EstadoHabitacionDtoGet.cs" Line="13" Column="46" />
+      <File FileName="Hotel.Application/Dtos/EstadoHabitacion/EstadoHabitacionDtoRemove.cs" Line="13" Column="3" />
+      <File FileName="Hotel.Application/Dtos/EstadoHabitacion/EstadoHabitacionDtoUpdate.cs" Line="8" Column="32" />
+      <File FileName="Hotel.Domain/Entity/EstadoHabitacion.cs" Line="14" Column="46" />
+      <File FileName="Hotel.Application/Dtos/Habitacion/HabitacionDtoAdd.cs" Line="5" Column="37" />
+      <File FileName="Hotel.Application/Dtos/Habitacion/HabitacionDtoBase.cs" Line="22" Column="46" />
+      <File FileName="Hotel.Application/Dtos/Habitacion/HabitacionDtoGet.cs" Line="21" Column="46" />
+      <File FileName="Hotel.Application/Dtos/Habitacion/HabitacionDtoRemove.cs" Line="15" Column="1" />
+      <File FileName="Hotel.Application/Dtos/Habitacion/HabitacionDtoUpdate.cs" Line="8" Column="20" />
+      <File FileName="Hotel.Domain/Entity/Habitacion.cs" Line="8" Column="1" />
+      <File FileName="Hotel.Application/Service/EstadoHabitacionService.cs" Line="1" Column="1" />
+      <File FileName="Hotel.Application/Service/HabitacionService.cs" Line="9" Column="45" />
+      <File FileName="Hotel.Application/Contract/IHabitacionService.cs" Line="7" Column="95" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Hotel" expanded="True">
-            <Node name="Api" expanded="True">
-              <Node name="Hotel.Api" expanded="True" />
+          <Node name="Hotel">
+            <Node name="Api">
+              <Node name="Hotel.Api" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="appsettings.json" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Application">
+              <Node name="Hotel.Application">
+                <Node name="Contract" expanded="True" />
+                <Node name="Core" expanded="True" />
+                <Node name="Dtos" expanded="True">
+                  <Node name="DtoBase.cs" selected="True" />
+                </Node>
+                <Node name="Service" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -22,11 +52,12 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/EstadoHabitacionController.cs" relfile="Hotel.Api/Controllers/EstadoHabitacionController.cs" line="26" column="1" />
-      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/EstadoHabitacionController.cs" relfile="Hotel.Api/Controllers/EstadoHabitacionController.cs" line="20" column="1" />
+      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/HabitacionController.cs" relfile="Hotel.Api/Controllers/HabitacionController.cs" line="16" column="1" />
+      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/EstadoHabitacionController.cs" relfile="Hotel.Api/Controllers/EstadoHabitacionController.cs" line="27" column="1" />
+      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/EstadoHabitacionController.cs" relfile="Hotel.Api/Controllers/EstadoHabitacionController.cs" line="21" column="1" />
+      <Breakpoint file="/Users/jandymercedes/Documents/GitHub/ProyetFp2/Hotel/Hotel.Api/Controllers/HabitacionController.cs" relfile="Hotel.Api/Controllers/HabitacionController.cs" line="22" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Web.Hotel.Web PreferredExecutionTarget="/Applications/Opera GX.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

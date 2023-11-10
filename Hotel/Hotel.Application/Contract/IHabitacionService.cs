@@ -1,8 +1,7 @@
 ﻿using Hotel.Application.Core;
-using School.Application.Dtos.EstadoHabitacion;
-using Hotel.Application.Dtos.EstadoHabitacion;
+using Hotel.Application.Dtos.Habitacion;
 
-namespace School.Application.Contracts
+namespace Hotel.Application.Contracts
 {
     public interface IHabitacionService : IBaseService<HabitacionDtoAdd, HabitacionDtoUpdate, HabitacionDtoRemove>
     {
