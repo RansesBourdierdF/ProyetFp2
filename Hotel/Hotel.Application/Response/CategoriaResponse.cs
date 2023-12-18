@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Hotel.Application.Core;
+
 
 namespace Hotel.Application.Response
 {
-    internal class CategoriaResponse
+    public class ClienteResponse : ServiceResult
     {
+        public int CategoriaId { get; set; }
     }
 }

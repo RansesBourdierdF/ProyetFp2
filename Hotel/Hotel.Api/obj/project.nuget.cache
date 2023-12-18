@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Bz50xHXAhia97zdo8weNrXfjURw16kCo8kOLgJFjXP9IqWyRl8Aeh303UmDCuW4qyJyn9btz5PaKQXH1A0InuQ==",
+  "dgSpecHash": "tYJPe+0BAi0GB+eIzVkjlsL7508g84HX8MfQECUTTz3NfHOrc/7aeyeqhUf+0e+ie9HJukbBGLHvCFN4sjLrJA==",
   "success": true,
   "projectFilePath": "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Api\\Hotel.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\madel\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\madel\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\madel\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.14\\microsoft.entityframeworkcore.6.0.14.nupkg.sha512",

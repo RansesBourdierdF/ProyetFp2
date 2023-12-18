@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eLY3tnp3HSBNwCVPQFGoX9z+/nKXefAW0h0PbIKNsKfx+kyZpfS2/sSv3pfxl9auzUcnEJE5NjqBNUml9a8QZg==",
+  "dgSpecHash": "BwQbw7xnluDHyXBuixu2QYZq3u++BFDL29VQ5qTLtyxn5Fc/wsm+VVmQGZ9hvwlfnnyImlDp+mKNUjhcsMMaLg==",
   "success": true,
   "projectFilePath": "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Application\\Hotel.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\madel\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\madel\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -2,7 +2,10 @@
 
 namespace Hotel.Application.Contract
 {
-    public interface IClienteService : IBaseService<ClienteDtoAgregar, ClientDtoActualizar, ClientDtoRemover>
+    public interface IClienteService : IBaseService <ClienteDtoAgregar, ClientDtoActualizar, ClientDtoRemover>
+
     {
-    }
+}
+    ServiceResult ObtenerPorNombre(string nombre);
+
 }
