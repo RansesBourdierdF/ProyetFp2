@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Hotel.Application.Core
 {
-    internal class BaseService
+    public interface IBaseService<TDtoAgregar, TDtoActualizar, TDtoRemover>
     {
     }
 }

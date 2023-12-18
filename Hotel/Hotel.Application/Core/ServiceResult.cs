@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Hotel.Application.Core
 {
-    internal class ServiceResult
+    public class ServiceResult
+    {
+        public ServiceResult()
     {
     }
 }
