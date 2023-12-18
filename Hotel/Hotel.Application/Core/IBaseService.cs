@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace Hotel.Application.Core
 {
-    internal class IBaseService
+    public interface IBaseService<TDtoAgregar, TDtoActualizar, TDtoRemover>
     {
+        ServiceResult ObtenerTodo();
+        ServiceResult ObtenerPorId(int Id);
+        ServiceResult Guardar(TDtoAgregar dtoAgregar);
+        ServiceResult Actualizar (TDtoActualizar dtoActualizar);
+        ServiceResult Remover(TDtoRemover dtoRemover);
+
     }
 }
