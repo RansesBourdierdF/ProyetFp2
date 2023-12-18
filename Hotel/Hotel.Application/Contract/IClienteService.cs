@@ -1,6 +1,8 @@
-﻿namespace Hotel.Application.Contract
+﻿using Hotel.Application.Core;
+
+namespace Hotel.Application.Contract
 {
-    internal class IClienteService
+    public interface IClienteService : IBaseService<ClienteDtoAgregar, ClientDtoActualizar, ClientDtoRemover>
     {
     }
 }
