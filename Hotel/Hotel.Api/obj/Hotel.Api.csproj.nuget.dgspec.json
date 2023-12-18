@@ -128,7 +128,14 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj": {
+                "projectPath": "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Domain\\Hotel.Domain.csproj"
+              },
+              "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Infrastructrure\\Hotel.Infrastructrure.csproj": {
+                "projectPath": "C:\\proyectoPro2\\ProyetFp2\\Hotel\\Hotel.Infrastructrure\\Hotel.Infrastructrure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

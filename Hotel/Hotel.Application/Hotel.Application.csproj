@@ -6,12 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\Categoria\" />
-    <Folder Include="Dtos\Cliente\" />
+    <Compile Remove="Dtos\Categoria\**" />
+    <Compile Remove="Dtos\Cliente\**" />
+    <EmbeddedResource Remove="Dtos\Categoria\**" />
+    <EmbeddedResource Remove="Dtos\Cliente\**" />
+    <None Remove="Dtos\Categoria\**" />
+    <None Remove="Dtos\Cliente\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Domain\Hotel.Domain.csproj" />
+    <ProjectReference Include="..\Hotel.Infrastructrure\Hotel.Infrastructrure.csproj" />
   </ItemGroup>
 
 </Project>

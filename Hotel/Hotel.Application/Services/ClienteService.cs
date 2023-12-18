@@ -10,16 +10,16 @@ namespace Hotel.Application.Services
 {
     internal class ClienteService : IBaseService<ClienteDtoAgregar, ClienteDtoActualizar, ClienteDtoRemover>
     {
-        private readonly List<ClienteDto> clientes;  // Supongamos que tienes una lista de clientes como ejemplo
+        private readonly List<ClienteDto> clientes;  
 
         public ClienteService()
         {
-            // Inicializa la lista de clientes (esto puede variar según tu implementación real)
+            
             this.clientes = new List<ClienteDto>
             {
                 new ClienteDto { Id = 1, Nombre = "Cliente 1" },
                 new ClienteDto { Id = 2, Nombre = "Cliente 2" },
-                // Agrega más clientes según sea necesario
+               
             };
         }
 
@@ -35,7 +35,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al obtener todos los clientes.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
@@ -63,7 +63,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al obtener el cliente por Id.";
-                // Loguea el error si es necesario
+              
             }
 
             return result;
@@ -75,11 +75,11 @@ namespace Hotel.Application.Services
 
             try
             {
-                // Realiza validaciones adicionales si es necesario
+                
 
                 ClienteDto nuevoCliente = new ClienteDto
                 {
-                    Id = this.clientes.Count + 1,  // Genera un nuevo Id (esto puede variar según tu implementación real)
+                    Id = this.clientes.Count + 1,  
                     Nombre = dtoAgregar.Nombre,
                     // Agrega más propiedades según sea necesario
                 };
@@ -93,7 +93,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al guardar el cliente.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
@@ -112,7 +112,7 @@ namespace Hotel.Application.Services
                     // Realiza validaciones adicionales si es necesario
 
                     clienteExistente.Nombre = dtoActualizar.Nombre;
-                    // Actualiza más propiedades según sea necesario
+                    // Actualizar más propiedades según sea necesario
 
                     result.Mensaje = "El cliente fue actualizado correctamente.";
                 }
@@ -126,7 +126,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al actualizar el cliente.";
-                // Loguea el error si es necesario
+               
             }
 
             return result;
@@ -170,25 +170,25 @@ namespace Hotel.Application.Services
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+        
     }
 
     public class ClienteDtoAgregar
     {
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+     
     }
 
     public class ClienteDtoActualizar
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+   
     }
 
     public class ClienteDtoRemover
     {
         public int Id { get; set; }
-        // Agrega más propiedades según sea necesario
+        
     }
 }

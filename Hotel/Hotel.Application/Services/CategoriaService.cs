@@ -8,16 +8,15 @@ namespace Hotel.Application.Services
 {
     internal class CategoriaService : IBaseService<CategoriaDtoAgregar, CategoriaDtoActualizar, CategoriaDtoRemover>
     {
-        private readonly List<CategoriaDto> categorias;  // Supongamos que tienes una lista de categorías como ejemplo
-
+        private readonly List<CategoriaDto> categorias;  
         public CategoriaService()
         {
-            // Inicializa la lista de categorías (esto puede variar según tu implementación real)
+           
             this.categorias = new List<CategoriaDto>
             {
                 new CategoriaDto { Id = 1, Nombre = "Categoria 1" },
                 new CategoriaDto { Id = 2, Nombre = "Categoria 2" },
-                // Agrega más categorías según sea necesario
+               
             };
         }
 
@@ -33,7 +32,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al obtener todas las categorías.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
@@ -61,7 +60,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al obtener la categoría por Id.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
@@ -73,13 +72,13 @@ namespace Hotel.Application.Services
 
             try
             {
-                // Realiza validaciones adicionales si es necesario
+                
 
                 CategoriaDto nuevaCategoria = new CategoriaDto
                 {
-                    Id = this.categorias.Count + 1,  // Genera un nuevo Id (esto puede variar según tu implementación real)
+                    Id = this.categorias.Count + 1,  
                     Nombre = dtoAgregar.Nombre,
-                    // Agrega más propiedades según sea necesario
+                   
                 };
 
                 this.categorias.Add(nuevaCategoria);
@@ -91,7 +90,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al guardar la categoría.";
-                // Loguea el error si es necesario
+               
             }
 
             return result;
@@ -107,10 +106,10 @@ namespace Hotel.Application.Services
 
                 if (categoriaExistente != null)
                 {
-                    // Realiza validaciones adicionales si es necesario
+                    
 
                     categoriaExistente.Nombre = dtoActualizar.Nombre;
-                    // Actualiza más propiedades según sea necesario
+               
 
                     result.Mensaje = "La categoría fue actualizada correctamente.";
                 }
@@ -124,7 +123,7 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al actualizar la categoría.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
@@ -140,7 +139,6 @@ namespace Hotel.Application.Services
 
                 if (categoriaExistente != null)
                 {
-                    // Realiza validaciones adicionales si es necesario
 
                     this.categorias.Remove(categoriaExistente);
 
@@ -156,37 +154,37 @@ namespace Hotel.Application.Services
             {
                 result.Success = false;
                 result.Mensaje = $"Ocurrió un error al eliminar la categoría.";
-                // Loguea el error si es necesario
+                
             }
 
             return result;
         }
     }
 
-    // Clases DTO para agregar, actualizar y remover categorías (puedes definirlas según tus necesidades)
+    
     public class CategoriaDto
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+        
     }
 
     public class CategoriaDtoAgregar
     {
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+       
     }
 
     public class CategoriaDtoActualizar
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        // Agrega más propiedades según sea necesario
+        
     }
 
     public class CategoriaDtoRemover
     {
         public int Id { get; set; }
-        // Agrega más propiedades según sea necesario
+      
     }
 }
