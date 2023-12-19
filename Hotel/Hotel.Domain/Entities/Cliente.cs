@@ -1,5 +1,4 @@
 using Hotel.Domain.Core;
-using System;
 namespace Hotel.Domain.Entities
 {
     public class Cliente : BaseEntity
