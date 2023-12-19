@@ -3,7 +3,7 @@
 
 namespace Hotel.Application.Response
 {
-    public class ClienteResponse : ServiceResult
+    public interface ClienteResponse : ServiceResult
     {
         public int CategoriaId { get; set; }
     }
