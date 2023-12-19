@@ -39,8 +39,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotelCommonPrinciples", "HotelCommonPrinciples", "{C5C033FF-7628-4807-A66F-70849604F9C6}"
 	ProjectSection(SolutionItems) = preProject
 		Common.cs = Common.cs
-		School.CommonPrinciples.csproj = School.CommonPrinciples.csproj
+		Hotel.CommonPrinciples.csproj = Hotel.CommonPrinciples.csproj
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hotel.Cliente.Api", "Hotel.Cliente.Api", "{5416AC8B-0E9E-444D-9A82-D3B7AE0C75E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using Hotel.Api.Models.Module.Cliente;  // Importa los espacios de nombres de Cliente
+﻿using Hotel.Api.Models.Module.Cliente;  
 using Hotel.Domain.Entities;
 using Hotel.Infrastructrure.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -7,17 +7,17 @@ namespace Hotel.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClienteController : ControllerBase  // Cambia el nombre del controlador a ClienteController
+    public class ClienteController : ControllerBase  
     {
-        private readonly ClienteRepository clienteRepository;  // Cambia el nombre de la variable y el tipo de repositorio
+        private readonly ClienteRepository clienteRepository;  
 
-        public ClienteController(ClienteRepository clienteRepository)  // Cambia el nombre del parámetro del constructor
+        public ClienteController(ClienteRepository clienteRepository)  
         {
             this.clienteRepository = clienteRepository;
         }
 
         [HttpGet("GetClienteByClienteId")]
-        public IActionResult GetClienteByClienteId(int clienteId)  // Cambia los nombres de las rutas y parámetros
+        public IActionResult GetClienteByClienteId(int clienteId)  
         {
             var cliente = clienteRepository.GetClienteById(clienteId);
 
@@ -48,7 +48,7 @@ namespace Hotel.Api.Controllers
         {
             Cliente cliente = new Cliente(1)
             {
-                CreacionDeUsuario = clienteAdd.CreacionDeUsuario, // Asegúrate de asignar un valor válido
+                CreacionDeUsuario = clienteAdd.CreacionDeUsuario, 
                 NombreCompleto = clienteAdd.NombreCompleto,
                 FechaCreacion = clienteAdd.FechaCreacion,
                 Estado = clienteAdd.Estado
@@ -63,8 +63,7 @@ namespace Hotel.Api.Controllers
         {
             Cliente cliente = new Cliente(1)
             {
-                CreacionDeUsuario = clienteUpdate.CreacionDeUsuario, // Asegúrate de asignar un valor válido
-                                                                     // Otros campos de actualización
+                CreacionDeUsuario = clienteUpdate.CreacionDeUsuario, 
             };
 
             return Ok();
