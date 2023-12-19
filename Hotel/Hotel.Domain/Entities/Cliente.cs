@@ -6,9 +6,9 @@ namespace Hotel.Domain.Entities
         public readonly object Descripcion;
 
 
-        public Cliente(int creacionDeUsuario) : base(creacionDeUsuario)
+        public Cliente (int creacionDeUsuario) : base(creacionDeUsuario)
         {
-
+            Descripcion = new object();
         }
 
         public string? TipoDocumento { get; set; }

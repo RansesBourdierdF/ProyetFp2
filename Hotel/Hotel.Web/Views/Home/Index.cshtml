@@ -1,8 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<ClienteViewModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Clientes</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre Completo</th>
+            <th>Correo</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.IdCliente</td>
+                <td>@cliente.NombreCompleto</td>
+                <td>@cliente.Correo</td>
+                <td>@cliente.Estado</td>
+            </tr>
+        }
+    </tbody>
+</table>

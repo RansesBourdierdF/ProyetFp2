@@ -2,6 +2,7 @@
 {
     public class ClienteGetAllModel
     {
-        internal object IdCliente;
+        internal object ? IdCliente;
+        internal object? Nombre;
     }
 }
