@@ -43,6 +43,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotelCommonPrinciples", "Ho
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hotel.Cliente.Api", "Hotel.Cliente.Api", "{5416AC8B-0E9E-444D-9A82-D3B7AE0C75E7}"
+	ProjectSection(SolutionItems) = preProject
+		Modules.cs = Modules.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
